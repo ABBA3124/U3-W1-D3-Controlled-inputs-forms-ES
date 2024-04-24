@@ -19,6 +19,9 @@
 .ciao {
   margin-bottom: 20px;
 }
+.selected-style {
+  border: 2px solid red;
+}
 
 @media (max-width: 576px) {
   .card-img-top {

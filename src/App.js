@@ -5,7 +5,12 @@ import MyNav from './componets/MyNav'
 import MyFooter from './componets/MyFooter'
 import Welcome from './componets/Welcome'
 import AllTheBooks from './componets/AllTheBooks'
-
+import BookList from './componets/BookList'
+import fantasy from "./books/fantasy.json"
+import history from "./books/history.json"
+import horror from "./books/horror.json"
+import romance from "./books/romance.json"
+import scifi from "./books/scifi.json"
 
 
 function App() {
@@ -16,7 +21,8 @@ function App() {
       <Welcome/>
       </header>
       <main>
-        <AllTheBooks/>
+      <BookList books={romance} /> 
+        {/* <AllTheBooks/> */}
       </main>
       <MyFooter/>
     </div>
