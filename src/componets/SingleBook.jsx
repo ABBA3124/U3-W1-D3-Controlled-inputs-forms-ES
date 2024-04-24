@@ -1,6 +1,7 @@
 import React from 'react'
 import { Card, Button } from 'react-bootstrap'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
+import '../CSS/AllTheBooks.css'
 
 class SingleBook extends React.Component {
     constructor(props) {
@@ -20,7 +21,7 @@ class SingleBook extends React.Component {
         const { book } = this.props;
         const { selected } = this.state;
         return (
-            <Card className={`mb-4 card-container ${selected ? 'selected-style' : ''}`}>
+            <Card className={`mb-4 card-container m-3 ${selected ? 'selected-style' : ''}`}>
                 <LazyLoadImage
                     alt={book.title}
                     src={book.img}

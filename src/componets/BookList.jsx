@@ -13,10 +13,10 @@ function BookList({ books }) {
         <>
             <Form>
                 <Form.Group controlId="searchBooks" className='mb-3 ms-4 me-4'>
-                    <Form.Label>Cerca Libri</Form.Label>
+                    <Form.Label>Cerca Libro</Form.Label>
                     <Form.Control
                         type="text"
-                        placeholder="Inserisci il titolo del libro"
+                        placeholder="Insert title of the book"
                         onChange={(e) => setSearchTerm(e.target.value)}
                     />
                 </Form.Group>
